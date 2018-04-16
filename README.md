@@ -2,16 +2,13 @@
 Instructions and Demo for GAB 2018 - April 21
 
 
+## Setup a new Ubuntu 16.04 VM
 
-Readme.md
-
-##Setup a new Ubuntu 16.04 VM
-
-##Setup xrdp on VM
+## Setup xrdp on VM
 
 1. Open required ports on VM
 
-##Install Python & Tensorflow
+## Install Python & Tensorflow
 
 1.
 ``` shell
@@ -34,10 +31,10 @@ $ easy_install -U pip
 $ sudo apt-get install python3-tk
 ```
 
-##Setup tensowrflow GPU configuration on VM
+## Setup tensowrflow GPU configuration on VM
 
 Please start configuration at "Completing CUDA/Tensorflow setup" step in 
 https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/03/27/azure-gpu-tensorflow-step-by-step-setup/
 
-##Download and explain demos on Tensorflow
+## Download and explain demos on Tensorflow
 
