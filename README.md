@@ -3,7 +3,7 @@ Instructions and Demo for GAB 2018 - April 21
 
 
 ## Setup a new Ubuntu 16.04 VM
-1. Creare a Ubuntu 16.04 VM following: +Create resource > Virtual Machines > Ubuntu Server 16.04 > Clasic > Create > Default options (take 5 minutes)
+1. Creare a Ubuntu 14.04 VM following: +Create resource > Virtual Machines > Ubuntu Server 14.04 > Clasic > Create > Default options (take 5 minutes)
 2. Connect to server using: ssh enrique@194.235.81.167
 
 ## Setup xrdp on VM
@@ -14,29 +14,23 @@ Instructions and Demo for GAB 2018 - April 21
     $ sudo apt-get install xrdp
     ```
 
-2. Open required ports on VM using: Dashboard > VM > Endpoints > Add 
+2. Open required ports on VM using: Dashboard > VM > Newtwork > Add inbound port rule
 
-    Name: default-allow-rdp
+    Select Service RDP
 
-    Public port: 3389
-
-    Private port: 3389
-
-    Floating IP Address: Disabled (Blue)
-
-    Order: 1001
-
-    Action: Permit
-
-    Remote Subnet: 0.0.0.0/0
+    Press OK
 
 3. Install lubuntu desktop (15 mins)
+
+    ```
+    $ sudo apt-get update
+    ```
 
     ```
     $ sudo apt-get install lubuntu-desktop
     ```
 
-4. Copy session info
+4. Create session entry point
 
     ```
     $ echo "lxsession -s Lubuntu -e LXDE" > ~/.xsession
@@ -50,26 +44,35 @@ Instructions and Demo for GAB 2018 - April 21
 
 ## Install Python & Tensorflow
 
-1.
-``` shell
-$ sudo apt-get install python3-pip python3-dev python-virtualenv # for Python 3.n
-```
-2.
-```
-$ virtualenv --system-site-packages -p python3 targetDirectory # for Python 3.n
-```
-3.
-```
-$ source ~/tensorflow/bin/activate # bash, sh, ksh, or zsh
-```
-4.
-```
-$ easy_install -U pip
-```
-5.
-```
-$ sudo apt-get install python3-tk
-```
+1. Install Python
+
+    ``` shell
+    $ sudo apt-get install python3-pip python3-dev python-virtualenv # for Python 3.n
+    ```
+
+2. Create a virtualenv (optional)
+
+    ```
+    $ virtualenv --system-site-packages -p python3 targetDirectory # for Python 3.n
+    ```
+
+3. Install tensorflow
+
+    ```
+    $ source ~/tensorflow/bin/activate # bash, sh, ksh, or zsh
+    ```
+
+4. Install pip
+
+    ```
+    $ easy_install -U pip
+    ```
+
+5. Install tk library
+
+    ```
+    $ sudo apt-get install python3-tk
+    ```
 
 ## Setup tensowrflow GPU configuration on VM
 
