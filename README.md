@@ -2,8 +2,8 @@
 Instructions and Demo for GAB 2018 - April 21
 
 
-## Setup a new Ubuntu 16.04 VM
-1. Creare a Ubuntu 14.04 VM following: +Create resource > Virtual Machines > Ubuntu Server 14.04 > Clasic > Create > Default options (take 5 minutes)
+## Setup a new Ubuntu 17.10 VM
+1. Creare a Ubuntu 17.10 VM following: +Create resource > Virtual Machines > Ubuntu Server 17.10 > Clasic > Create > Default options (take 5 minutes)
 2. Connect to server using: ssh enrique@194.235.81.167
 
 ## Setup xrdp on VM
@@ -27,13 +27,18 @@ Instructions and Demo for GAB 2018 - April 21
     ```
 
     ```
-    $ sudo apt-get install lubuntu-desktop
+    $ sudo apt install gnome-session
     ```
 
 4. Create session entry point
 
     ```
-    $ echo "lxsession -s Lubuntu -e LXDE" > ~/.xsession
+    $ echo "gnome-session" > ~/.xsession
+    ```
+5. Edit /etc/X11/Xwrapper.config file
+
+    ```
+    $ sudo nano /etc/X11/Xwrapper.config
     ```
 
 5. Reset xserver
@@ -42,7 +47,13 @@ Instructions and Demo for GAB 2018 - April 21
     $ sudo /etc/init.d/xrdp restart
     ```
 
-6. Connect to VM using Windows RDP
+6. Change content to this line:
+
+    ```
+    allowed_users=anybody
+    ```
+
+6. Connect to VM using Windows RDP and please ignore "Authentication required to create color managed device error"
 
 ## Install Git
 
@@ -108,17 +119,17 @@ Instructions and Demo for GAB 2018 - April 21
     ```
     $ git clone https://github.com/tecnocrata/gab2018-machine-learning.git
     ```
-    
+
 2. Access directory
 
     ```
     $ cd gab2018-machine-learning/
     ```
-    
+
 3. Execute first sample
 
     ```
     $ python3 01-installation_test.py
     ```
 
-4. Follow presenter's instrucctions, running samples in sequence
+4. In order to run 02 and 03 samples you must be logged into VM using RDP
