@@ -35,7 +35,7 @@ Instructions and Demo for GAB 2018 - April 21
     ```
     $ echo "gnome-session" > ~/.xsession
     ```
-5. Edit /etc/X11/Xwrapper.config file
+5. Edit /etc/X11/Xwrapper.config file, based on http://c-nergy.be/blog/?p=10887
 
     ```
     $ sudo nano /etc/X11/Xwrapper.config
