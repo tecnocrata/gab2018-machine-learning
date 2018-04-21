@@ -4,7 +4,8 @@ Instructions and Demo for GAB 2018 - April 21
 
 ## Setup a new Ubuntu 17.10 VM
 1. Creare a Ubuntu 17.10 VM following: +Create resource > Virtual Machines > Ubuntu Server 17.10 > Clasic > Create > Default options (take 5 minutes)
-2. Connect to server using: ssh enrique@194.235.81.167
+2. Install Putty (https://www.putty.org) OR Enable WSL in Win10 (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+3. Connect to server using: ssh xxxxxx@194.235.81.167
 
 ## Setup xrdp on VM
 
