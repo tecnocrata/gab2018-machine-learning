@@ -1,4 +1,4 @@
-# gab2018-machine-learning
+# Knowing Machine Learning
 Instructions and Demo for GAB 2018 - April 21
 
 
