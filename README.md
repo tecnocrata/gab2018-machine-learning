@@ -63,11 +63,12 @@ Instructions and Demo for GAB 2018 - April 21
 2. ```$ sudo apt-get install git```
 
 
-## Setup tensowrflow GPU configuration on VM
+## Setup tensowrflow GPU configuration on VM 
 
-1. Goto: https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/03/27/azure-gpu-tensorflow-step-by-step-setup/
-2. Please locate "Completing CUDA/Tensorflow setup" section 
-3. Follow instructions until before "Filing a support ticket" section
+1. These steps are only for future reference, please don't execute them
+2. Goto: https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/03/27/azure-gpu-tensorflow-step-by-step-setup/
+3. Please locate "Completing CUDA/Tensorflow setup" section 
+4. Follow instructions until before "Filing a support ticket" section
 
 ## Install Python & Tensorflow
 
